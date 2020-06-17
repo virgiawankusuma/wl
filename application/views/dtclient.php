@@ -1,62 +1,29 @@
 <div class="container">
-	<!-- <table id="table_id" class="display table table-hover table-bordered">
-		<thead>
-			<tr>
-				<th scope="col">Column 1</th>
-				<th scope="col">Column 2</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Row 1 Data 1</td>
-				<td>Row 1 Data 2</td>
-			</tr>
-			<tr>
-				<td>Row 2 Data 1</td>
-				<td>Row 2 Data 2</td>
-			</tr>
-		</tbody>
-	</table> -->
-	<!-- <table id="table_id" class="display">
+	<table id="tb" class="table table-hover">
 	    <thead>
 	        <tr>
-	            <th>Column 1</th>
-	            <th>Column 2</th>
+	            <th scope="col">ID</th>
+	            <th scope="col">Nama</th>
+	            <th scope="col">Aksi</th>
 	        </tr>
 	    </thead>
 	    <tbody>
+	    	<?php $id=1;
+	    	foreach ($isi as $k0 => $v0){ ?>
 	        <tr>
-	            <td>Row 1 Data 1</td>
-	            <td>Row 1 Data 2</td>
+	            <td><?= $id++ ;?></td>
+	            <td><?= $v0['nama'] ;?></td>
+	            <td>
+	            	<a class="badge badge-success" href="<?= base_url('crud/ubah/'.$v0['id']) ;?>">Ubah</a>
+	            	<a class="badge badge-danger" href="<?= base_url('crud/hapus/'.$v0['id']) ;?>" onclick="return confirm('yakin ingin menghapus?')">Hapus</a>
+	            </td>
 	        </tr>
-	        <tr>
-	            <td>Row 2 Data 1</td>
-	            <td>Row 2 Data 2</td>
-	        </tr>
+	    	<?php } ?>
 	    </tbody>
-	</table> -->
-
-</div>
-	<table id="table_id" class="display">
-    <thead>
-        <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Row 1 Data 1</td>
-            <td>Row 1 Data 2</td>
-        </tr>
-        <tr>
-            <td>Row 2 Data 1</td>
-            <td>Row 2 Data 2</td>
-        </tr>
-    </tbody>
 	</table>
-	<script type="text/javascript">
+		<script type="text/javascript">
 		$(document).ready( function () {
-    $('#table_id').DataTable();
-} );
-	</script>
+	    $('#tb').DataTable();
+	} );
+		</script>
+</div>

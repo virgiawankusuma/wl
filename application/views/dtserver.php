@@ -1,9 +1,9 @@
 <div class="container">
-	<table id="tb">
+	<table id="tb" class="table table-hover">
 		<thead>
 			<tr>
-				<th>ID</th>
-				<th>Nama</th>
+				<th scope="col">ID</th>
+	            <th scope="col">Nama</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -11,7 +11,7 @@
 	</table>
 
 	<script type="text/javascript">
-		$(document).ready( function () {
+		$(document).ready(function () {
 			load();
 		});	
 
@@ -24,14 +24,16 @@
 				"pagingType": "simple",
 				"order": [],
 				"ajax": {
-					"url": "<?= base_url('datatablesserver/showTable') ;?>",
+					"url": "<?= base_url('DatatablesServer/showTable') ;?>",
 					"type": "POST"
-				}
-			})
+				},
+			});
 		}
 
-		function reload(){
+		function reload()
+		{
 			table.ajax.reload(null, false);
 		}
 	</script>
+
 </div>

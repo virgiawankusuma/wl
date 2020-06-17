@@ -27,7 +27,7 @@ class Crud extends CI_Controller {
 	{
 		$data = array(
 			'judul' => 'Tampil Data',
-			'isi' => $this->Mcrud->retrive()
+			'isi' => $this->Mcrud->retrieve()
 		);
 		$this->load->view('template/header', $data);
 		$this->load->view('tampil_data', $data);

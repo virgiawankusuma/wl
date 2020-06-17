@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Mcrud extends CI_Model {
 
-	public function retrive()
+	public function retrieve()
 	{
 		// caraku dewe
 		// $this->db->select('id, nama');

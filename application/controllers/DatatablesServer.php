@@ -12,7 +12,7 @@ class DatatablesServer extends CI_Controller {
 	public function index()
 	{
 		$data = array(
-			'judul' => 'Datatables Server' , 
+			'judul' => 'Datatables Server Side' ,
 		);
 		$this->load->view('template/header', $data);
 		$this->load->view('dtserver', $data);
