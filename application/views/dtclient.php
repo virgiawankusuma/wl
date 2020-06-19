@@ -20,6 +20,11 @@
 	        </tr>
 	    	<?php } ?>
 	    </tbody>
+	    <tfoot>
+	    	<tr>
+	    		<td colspan="3"><a class="btn btn-primary" href="<?= base_url('crud/tambah') ;?>">Tambah Data</a></td>
+	    	</tr>
+	    </tfoot>
 	</table>
 		<script type="text/javascript">
 		$(document).ready( function () {

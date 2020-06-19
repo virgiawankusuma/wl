@@ -30,7 +30,7 @@ class Mcrud extends CI_Model {
 	{
 		$q = $this->db->insert('tb_latihan', $data);
 		if ($q) {
-			redirect('crud/tampil');
+			redirect('datatablesclient');
 		}else{
 			redirect('crud/tambah');
 		}
@@ -50,7 +50,7 @@ class Mcrud extends CI_Model {
 		);
 		$q = $this->db->where('id', $id)->update('tb_latihan', $data);
 		if ($q) {
-			redirect('crud/tampil');
+			redirect('datatablesclient');
 		}else{
 			redirect('crud/ubah');
 		}
@@ -61,7 +61,7 @@ class Mcrud extends CI_Model {
 		$id = $this->uri->segment(3);
 		$q =  $this->db->where('id', $id)->delete('tb_latihan');
 		if ($q) {
-			redirect('crud/tampil');
+			redirect('datatablesclient');
 		}
 	}
 
