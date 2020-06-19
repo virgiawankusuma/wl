@@ -8,16 +8,7 @@ class Crud extends CI_Controller {
 		parent::__construct();
 		$this->load->model('Mcrud');
 	}
-
-	// caraku dewe
-	// public function index()
-	// {	
-	// 	$data['isi'] = $this->Mcrud->retrive();
-	// 	$this->load->view('tampil_data', $data);
-	// }
-
-	// carane pak harminto
-	// Menampilkan data
+	
 	public function index()
 	{	
 		redirect('crud/tampil');

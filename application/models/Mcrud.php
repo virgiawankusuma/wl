@@ -5,13 +5,6 @@ class Mcrud extends CI_Model {
 
 	public function retrieve()
 	{
-		// caraku dewe
-		// $this->db->select('id, nama');
-		// $this->db->from('tb_latihan');
-		// return $this->db->get()->result();
-
-
-		// carane pak harminto
 		$this->db->select('id, nama');
 		$this->db->from('tb_latihan');
 		$q = $this->db->get();
@@ -23,7 +16,6 @@ class Mcrud extends CI_Model {
 		$q->free_result();
 
 		return $hasil;
-
 	}
 
 	public function simpan_data($data)

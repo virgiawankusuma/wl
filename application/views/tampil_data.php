@@ -1,21 +1,4 @@
 <div class="container">
-
-  <!-- caraku dewe -->
-  <!-- <table class="table table-hover">
-    <tr>
-      <th scope="col">ID</th>
-      <th scope="col">Nama</th>
-    </tr>
-
-    <?php foreach ($isi as $i){ ?>
-    <tr>
-      <td scope="row"><?= $i->id ;?></td>
-      <td><?= $i->nama ;?></td>
-    </tr>
-    <?php } ?>
-  </table> -->
-
-  <!-- carane pak harminto -->
   <table class="table table-hover table-bordered">
     <tr>
       <th scope="col">ID</th>
